@@ -1,6 +1,6 @@
-﻿namespace Backend;
+﻿namespace GeometricFigure.Backend;
 
-public class Square : GeometricFigure
+public class Square : GeometricFigures
 {
     // Fields
 

@@ -1,6 +1,6 @@
-﻿namespace Backend;
+﻿namespace GeometricFigure.Backend;
 
-public class Circle : GeometricFigure
+public class Circle : GeometricFigures
 {
     // Fields
 

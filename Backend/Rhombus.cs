@@ -1,4 +1,4 @@
-﻿namespace Backend;
+﻿namespace GeometricFigure.Backend;
 
 public class Rhombus : Square
 {

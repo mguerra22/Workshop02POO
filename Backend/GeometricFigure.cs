@@ -1,10 +1,12 @@
-﻿namespace Backend;
+﻿using System.Globalization;
 
-public abstract class GeometricFigure
+namespace GeometricFigure.Backend;
+
+public abstract class GeometricFigures
 {
     // Constructors
 
-    protected GeometricFigure(string name)
+    protected GeometricFigures(string name)
     {
         Name = name;
     }
@@ -21,6 +23,11 @@ public abstract class GeometricFigure
 
     public override string ToString()
     {
-        return $"{Name} => Area.....: {GetArea()}    Perimeter: {GetPerimeter()}";
+        return string.Format(
+            CultureInfo.InvariantCulture,
+            "{0,-15} => Area.....: {1,15:N5}    Perimeter: {2,15:N5}",
+            Name,
+            GetArea(),
+            GetPerimeter());
     }
 }
